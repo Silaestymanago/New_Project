@@ -33,7 +33,7 @@ public class HomePage {
         $("[class='button']").click();
     }
 
-    @Step("TC-002,Step3.Enter the first name in the firstName_field")
+    @Step("TC-002,Step_3.Enter the first name in the firstName_field")
     public void enterFirstNameInTheFirstNameField(String firstName) {
         $("[class='account register']").shouldBe(Condition.visible);
         $x("//input[@placeholder=\"Ваше ім'я\"]").click();
@@ -42,7 +42,7 @@ public class HomePage {
 
     }
 
-    @Step("TC-002,Step4.Enter the last_name in the lastName_field")
+    @Step("TC-002,Step_4.Enter the last_name in the lastName_field")
     public void enterLastnameInTheLastNameField(String lastName) {
         $x("//input[@placeholder=\"Ваше прізвище\"]").click();
         $x("//input[@placeholder=\"Ваше прізвище\"]").sendKeys(lastName);
@@ -50,7 +50,7 @@ public class HomePage {
 
     }
 
-    @Step("TC-002,Step5.Enter phone number in the phone_field")
+    @Step("TC-002,Step_5.Enter phone number in the phone_field")
     public void enterPhoneNumberInThePhoneField(String phoneNumber) {
         $x("//input[@placeholder=\"_ _ _ _ _ _ _ _ _\"]").click();
         $x("//input[@placeholder=\"_ _ _ _ _ _ _ _ _\"]").sendKeys(phoneNumber);

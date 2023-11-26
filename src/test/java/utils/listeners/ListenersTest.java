@@ -4,6 +4,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -25,6 +26,7 @@ public class ListenersTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
+
         System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
         saveScreenshotPNG();
 

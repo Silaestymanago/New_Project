@@ -3,6 +3,7 @@
 <suite name="Jenkins">
     <test name="AllTest">
         <classes>
+            <class name="utils.listeners.ListenersTest"/>
             <class name="tests.HomePageTest"/>
             <class name="tests.InfoPageTests"/>
             <class name="tests.ProductDetailsPageTests"/>

@@ -59,7 +59,7 @@ public class ProductPageTest {
         homePage.buttonDiningTables();
         ProductPage productPage = new ProductPage();
         int actualModelsDiningTables = productPage.CountModelsDiningTables();
-        int expectedModelsDiningTables = 22;
+        int expectedModelsDiningTables = 26;
         Assert.assertEquals(actualModelsDiningTables, expectedModelsDiningTables);
 
 
