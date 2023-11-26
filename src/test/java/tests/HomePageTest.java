@@ -25,7 +25,7 @@ public class HomePageTest {
 
         String firstName = "Elina";
         homePage.enterFirstNameInTheFirstNameField(firstName);
-        Assert.assertEquals(firstName, "lina");
+        Assert.assertEquals(firstName, "Elina");
 
         String lastName = "Popova";
         homePage.enterLastnameInTheLastNameField(lastName);
