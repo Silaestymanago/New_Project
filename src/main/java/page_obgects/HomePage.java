@@ -143,14 +143,8 @@ public class HomePage {
 
     }
 
-    @Step("TC-011.Step_1:Click on the button\"так\"on the popup\"Чи правильно ми визначили Ваше місто: Київ?\"")
-    public void clickPopupButtonYes() {
-        $("[class='button geoip-confirm-ok']").shouldBe(Condition.visible);
-        $("[class='button geoip-confirm-ok']").click();
-    }
 
-
-    @Step("TC-011,Step_2.Click on the button\"Кухні\"")
+    @Step("TC-011,Step_1.Click on the button\"Кухні\"")
     public void buttonKitchen() {
         $("[class='button geoip-confirm-ok']").shouldNotBe(Condition.visible);
         $x("//span[contains(text(),'Кухні')]").click();

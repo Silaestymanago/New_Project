@@ -41,7 +41,6 @@ public class ProductPageTest {
     @Description("Check that the models of kitchen are loaded in the specified number.")
     public void kitchenModelsAreLoaded() {
         homePage.openHomePage();
-        homePage.clickPopupButtonYes();
         homePage.buttonKitchen();
         ProductPage productPage = new ProductPage();
         productPage.buttonModelStar();

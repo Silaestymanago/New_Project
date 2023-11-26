@@ -17,7 +17,6 @@ public class ProductDetailsPageTests {
     @Description("Verify that the description of product on the page is correct")
     public void verifyCorrectlyDescriptionProductPage() {
         homePage.openHomePage();
-     //   homePage.clickPopupButtonYes();
         homePage.buttonKitchen();
         ProductPage productPage = new ProductPage();
         productPage.clickButtonModel();
@@ -32,7 +31,6 @@ public class ProductDetailsPageTests {
             "from the form ,A message appears \"У Вас недостатньо товарів... :(\"")
     public void functionAddToCompare() {
         homePage.openHomePage();
-        //homePage.clickPopupButtonYes();
         homePage.buttonKitchen();
         ProductPage productPage = new ProductPage();
         productPage.clickButtonModel();
