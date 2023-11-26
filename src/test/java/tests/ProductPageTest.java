@@ -44,7 +44,7 @@ public class ProductPageTest {
         homePage.buttonKitchen();
         ProductPage productPage = new ProductPage();
         productPage.buttonModelStar();
-        int expectedKitchenModelsCount = 23;
+        int expectedKitchenModelsCount = 27;
         int actualModelsKitchenCount = productPage.countModelsKitchen();
         Assert.assertEquals(actualModelsKitchenCount, expectedKitchenModelsCount);
 
