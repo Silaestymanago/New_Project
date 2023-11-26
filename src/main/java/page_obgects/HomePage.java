@@ -1,6 +1,7 @@
 package page_obgects;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
@@ -11,8 +12,9 @@ import static com.codeborne.selenide.Selenide.*;
 public class HomePage {
 
     public void openHomePage() {
-        open("https://www.taburetka.ua/");
 
+        Configuration.headless = true; // Увімкнути режим хедлес браузера
+        open("https://www.taburetka.ua/");
     }
 
     @Step("TC-001;Step_1.Click on cabinets_button")
