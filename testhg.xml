@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Jenkins">
+    <test name="AllTest">
+        <classes>
+            <class name="tests.HomePageTest"/>
+            <class name="tests.InfoPageTests"/>
+            <class name="tests.ProductDetailsPageTests"/>
+            <class name="tests.ProductPageTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
